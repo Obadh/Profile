@@ -1,7 +1,5 @@
-var profileController = angular.module("profileController", []);
-profileController.controller("profileController", function($scope){
+var profileController = angular.module("profileController", ['userService']);
+profileController.controller("profileController", function($scope, user){
 
-			$scope.save = function() {
-
-			};
+	$scope.user = user;
 });
